@@ -1,74 +1,71 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Text.RegularExpressions;
+using TicTacToeAssignment4;
 
-//initializing variables
-string[] gameboard = {"A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"};
-string player_turn = "O";
-bool gameover = false;
-Dictionary<string, int> inputs = new Dictionary<string, int>
+string[,] gameboard =
 {
-    { "A1",0 },
-    { "A2",1 },
-    { "A3",2 },
-    { "B1",3 },
-    { "B2",4 },
-    { "B3",5 },
-    { "C1",6 },
-    { "C2",7 },
-    { "C3",8 },
+    { "A1", "A2", "A3" },
+    { "B1", "B2", "B3" },
+    { "C1", "C2", "C3" }
 };
 
+string player_turn = "O";
+bool gameover = false;
+
+TicTacToeSupporterClass TicTacTools = new TicTacToeSupporterClass();
 
 Console.WriteLine("Welcome to Tic-Tac-Toe!");
 
-// main game loop
 do
 {
-    
-    // print board
-    
-    Console.WriteLine("Player " + player_turn + ", please choose a square to claim (e.g. \"A3\"");
-    string player_choice =  Console.ReadLine(); //A1-C3
-    
-    int index;
-    
-    //check if input is valid
-    if (Regex.IsMatch(player_choice, @"^[ABC][123]$"))
+    // Print current board
+    TicTacTools.PrintBoard(gameboard);
+
+    Console.WriteLine($"Player {player_turn}, please choose a square (A1–C3):");
+    string player_choice = Console.ReadLine();
+
+    // Validate input
+    if (!Regex.IsMatch(player_choice, @"^[ABC][123]$"))
     {
-        index = inputs[player_choice]; // A3 --> 2, for example
-        
-        // check if spot is taken
-        if (gameboard[index] == "O" || gameboard[index] == "X")
-        {
-            //check turns
-            if (player_turn == "O")
-            {
-                gameboard[index] = player_turn;
-                player_turn = "X";
-            }
-            else
-            {
-                gameboard[index] = player_turn;
-                player_turn = "O";
-            }
-        }
-        else
-        {
-            Console.WriteLine("Please choose a spot that is not taken");
-        }
+        Console.WriteLine("Invalid input. Please enter A1, B2, etc.");
+        continue;
+    }
+
+    int row = player_choice[0] - 'A';  // A=0, B=1, C=2
+    int col = player_choice[1] - '1';  // 1=0, 2=1, 3=2
+
+    // Check if square is available
+    if (gameboard[row, col] == "X" || gameboard[row, col] == "O")
+    {
+        Console.WriteLine("That square is already taken. Try again.");
+        continue;
+    }
+
+    // Place move
+    gameboard[row, col] = player_turn;
+
+    // Check for winner
+    string winner = TicTacTools.CheckWinner(gameboard);
+    if (!string.IsNullOrEmpty(winner))
+    {
+        TicTacTools.PrintBoard(gameboard);
+        Console.WriteLine($"🎉 Player {winner} wins!");
+        gameover = true;
+        break;
     }
     else
     {
-        Console.WriteLine("Please choose a valid input (A1-C3)");
+        // Check if the gameboard is full
+        if (TicTacTools.IsBoardFull(gameboard))
+        {
+            Console.WriteLine("It is a tie!");
+            gameover = true;
+        }
     }
-    
-    
-    // call supporting class to check for winner
-    if (true)
-    {
-        Console.WriteLine("Player " + player_turn + " has won the game!");
-        gameover = true;
-    }
-        
-    
+
+    // Switch turns
+    player_turn = (player_turn == "O") ? "X" : "O";
+
 } while (!gameover);
+
+Console.WriteLine("Thanks for playing!");

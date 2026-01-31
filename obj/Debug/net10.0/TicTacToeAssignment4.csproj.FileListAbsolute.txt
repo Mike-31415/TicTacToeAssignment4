@@ -1,0 +1,15 @@
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/bin/Debug/net10.0/TicTacToeAssignment4
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/bin/Debug/net10.0/TicTacToeAssignment4.deps.json
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/bin/Debug/net10.0/TicTacToeAssignment4.runtimeconfig.json
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/bin/Debug/net10.0/TicTacToeAssignment4.dll
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/bin/Debug/net10.0/TicTacToeAssignment4.pdb
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.AssemblyInfoInputs.cache
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.AssemblyInfo.cs
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.csproj.CoreCompileInputs.cache
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.sourcelink.json
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.dll
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/refint/TicTacToeAssignment4.dll
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.pdb
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/TicTacToeAssignment4.genruntimeconfig.cache
+/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/Debug/net10.0/ref/TicTacToeAssignment4.dll

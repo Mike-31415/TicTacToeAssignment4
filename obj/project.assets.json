@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/Users/mitchhansen/.nuget/packages/": {}
+    "/Users/michaeleifert/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mitchhansen/RiderProjects/TicTacToeAssignment4/TicTacToeAssignment4.csproj",
+      "projectUniqueName": "/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/TicTacToeAssignment4.csproj",
       "projectName": "TicTacToeAssignment4",
-      "projectPath": "/Users/mitchhansen/RiderProjects/TicTacToeAssignment4/TicTacToeAssignment4.csproj",
-      "packagesPath": "/Users/mitchhansen/.nuget/packages/",
-      "outputPath": "/Users/mitchhansen/RiderProjects/TicTacToeAssignment4/obj/",
+      "projectPath": "/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/TicTacToeAssignment4.csproj",
+      "packagesPath": "/Users/michaeleifert/.nuget/packages/",
+      "outputPath": "/Users/michaeleifert/RiderProjects/TicTacToeAssignment4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mitchhansen/.nuget/NuGet/NuGet.Config"
+        "/Users/michaeleifert/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
