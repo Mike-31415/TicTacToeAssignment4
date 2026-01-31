@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using TicTacToeAssignment4;
 
+// 2D array
 string[,] gameboard =
 {
     { "A1", "A2", "A3" },
@@ -16,6 +17,7 @@ TicTacToeSupporterClass TicTacTools = new TicTacToeSupporterClass();
 
 Console.WriteLine("Welcome to Tic-Tac-Toe!");
 
+// Do While gameplay loop
 do
 {
     // Print current board
@@ -30,7 +32,7 @@ do
         Console.WriteLine("Invalid input. Please enter A1, B2, etc.");
         continue;
     }
-
+    // Convert input to Row and Col
     int row = player_choice[0] - 'A';  // A=0, B=1, C=2
     int col = player_choice[1] - '1';  // 1=0, 2=1, 3=2
 
